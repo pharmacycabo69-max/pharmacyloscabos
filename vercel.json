@@ -1,12 +1,22 @@
 {
   "redirects": [
     {
-      "source": "/es/:path*",
+      "source": "/es/(.*)",
       "destination": "https://www.rmcpharmacy.com/es",
       "statusCode": 301
     },
     {
-      "source": "/:path*",
+      "source": "/es",
+      "destination": "https://www.rmcpharmacy.com/es",
+      "statusCode": 301
+    },
+    {
+      "source": "/(.*)",
+      "destination": "https://www.rmcpharmacy.com/",
+      "statusCode": 301
+    },
+    {
+      "source": "/",
       "destination": "https://www.rmcpharmacy.com/",
       "statusCode": 301
     }
